@@ -4,7 +4,7 @@ st.set_page_config(page_title="📡 - Telecom Project Launcher", layout="wide")
 
 col1, col2 = st.columns(2)
 with col2:
-    st.image("bsnl-B5FLGLPP.png")
+    st.image("my_streamlit_app/bsnl-B5FLGLPP.png")
 with col1:
     st.image("rttc-logo.png")
 
