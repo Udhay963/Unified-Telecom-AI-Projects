@@ -8,7 +8,7 @@ col1, col2 = st.columns(2)
 with col2:
     st.image("my_streamlit_app/bsnl-B5FLGLPP.png")
 with col1:
-    st.image("my_streamlit_app/rttc.png")
+    st.image("my_streamlit_app/rttc-logo.png")
 
 st.title("RTTC BSNL HYD INTERNSHIP PROJECT")
 st.title("🚀 Unified Telecom + AI Projects")
