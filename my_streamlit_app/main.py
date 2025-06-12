@@ -9,9 +9,9 @@ with col1:
     st.image("rttc-logo.png")
 
 st.title("RTTC BSNL HYD INTERNSHIP PROJECT")
+
 st.title("🚀 Unified Telecom + AI Projects")
 
-# Define your 5 app names and URLs
 apps = {
      "🛡️ MAJOR PROJECT(i-TADS)": "https://telecomitads.streamlit.app/" ,
     "📶 Telecom Network Simulator ": "https://telecomntwsimulator.streamlit.app/",
