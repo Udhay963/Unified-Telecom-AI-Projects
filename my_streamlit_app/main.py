@@ -6,9 +6,9 @@ st.set_page_config(page_title="📡 Telecom Project Launcher", layout="wide")
 
 col1, col2 = st.columns(2)
 with col2:
-    st.image(r"C:\Users\yudha\Documents\Internship_project\Offline\self_project\my_streamlit_app\bsnl-B5FLGLPP.png")
+    st.image("my_streamlit_app/bsnl-logo.png")
 with col1:
-    st.image(r"C:\Users\yudha\Documents\Internship_project\Offline\self_project\my_streamlit_app\rttc-logo.png")
+    st.image("my_streamlit_app/rttc.png")
 
 st.title("RTTC BSNL HYD INTERNSHIP PROJECT")
 st.title("🚀 Unified Telecom + AI Projects")
