@@ -15,7 +15,7 @@ st.title("🚀 Unified Telecom + AI Projects")
 
 # List of project names and their launch script paths
 project_paths = {
-    "🛡️ MAJOR PROJECT(i-TADS)": "https://telecomitads.streamlit.app/",
+    "🛡️ MAJOR PROJECT(i-TADS)": "i-tads_1/app/streamlit_app.py",
     "📶 Telecom Network Simulator ": "telecom_dhcp_simulator_2/app.py",
     "📞 Telecom Switching Simulator ": "telecom_switching_simulator_3/streamlit_app.py",
     "🎧 VoIP Simulator": "telecom_network_simulator_5/streamlit_app.py",
