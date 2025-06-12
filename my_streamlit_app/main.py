@@ -1,38 +1,19 @@
 import streamlit as st
-import subprocess
-import os
 
-st.set_page_config(page_title="📡 Telecom Project Launcher", layout="wide")
+st.title("📁 Project Hub - App Launcher")
 
-col1, col2 = st.columns(2)
-with col2:
-    st.image("my_streamlit_app/bsnl-B5FLGLPP.png")
-with col1:
-    st.image("my_streamlit_app/rttc-logo.png")
-
-st.title("RTTC BSNL HYD INTERNSHIP PROJECT")
-st.title("🚀 Unified Telecom + AI Projects")
-
-# List of project names and their launch script paths
-project_paths = {
-    "🛡️ MAJOR PROJECT(i-TADS)": "i-tads_1/app/streamlit_app.py",
-    "📶 Telecom Network Simulator ": "telecom_dhcp_simulator_2/app.py",
-    "📞 Telecom Switching Simulator ": "telecom_switching_simulator_3/streamlit_app.py",
-    "🎧 VoIP Simulator": "telecom_network_simulator_5/streamlit_app.py",
-    "📟 Call Flow + IMS + PCM Visual Simulator": "telecom_network_simulator_4/app.py"
-
+# Define your 5 app names and URLs
+apps = {
+    "📡 i-TADS - Telecom Anomaly Detection": "https://telecomitads.streamlit.app/",
+    "📶 Internet Speed Tester": "https://your-speedtest-app-url",
+    "🔐 File Encryptor & Decryptor": "https://your-file-encryption-app-url",
+    "📞 Call Simulation": "https://your-call-sim-app-url",
+    "📊 Network Routing Visualizer": "https://your-routing-app-url"
 }
 
-# Dropdown for selecting project
-selected_project = st.selectbox("Select a project to launch:", list(project_paths.keys()))
+# Dropdown for user to choose an app
+selected_app = st.selectbox("Choose an App to Launch:", list(apps.keys()))
 
-# Launch button
-if st.button("🔗 Launch Project"):
-    script_path = project_paths[selected_project]
-    full_command = f"streamlit run {script_path}"
-    
-    st.success(f"Launching: {selected_project}")
-    
-    # Launch in a new terminal
-    subprocess.Popen(full_command, shell=True)
-    
+# Button to open selected app
+if st.button("🚀 Open Selected App"):
+    st.markdown(f"[👉 Click here to open {selected_app}]({apps[selected_app]})", unsafe_allow_html=True)
