@@ -1,3 +1,4 @@
+utils
 streamlit
 joblib
 pandas
