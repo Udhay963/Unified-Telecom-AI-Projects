@@ -5,5 +5,4 @@ numpy
 scikit-learn
 matplotlib
 networkx
-sounddevice
-pyaudio
+
